@@ -6,6 +6,12 @@ console.log("Hello World! I Don't Give a Bug")
 
 // Variables
 // variables are containers for data
+/*Rules for variables 
+These are case-sensitive
+Can only begin with a letter, underscore(“_”) or “$” symbol
+It can contain letters, numbers, underscore, or “$” symbol
+A variable name cannot be a reserved keyword
+*/
 // here age , name, price, x, y.. are variables
 
 age = 24;
@@ -21,6 +27,28 @@ console.log(y);
 
 isFollow = true;
 console.log(isFollow);
+
+
+// let, const & var
+//var: variables can be re-declared and updated. A global scope variable.
+// let: variables cannot be re-declared but can be updated. A block scope variable.
+//const: variables cannot be re-declared or updated. A block scope variable.
+// we do not use var in javascript as a goodprogrammer
+
+{
+    let a = 5;
+    console.log(a);
+}
+
+{
+    let a = 10;
+    console.log(a);
+}
+
+const PI = 3.14;
+console.log(PI)
+
+
 
 
 // JavaScript data Types
@@ -99,3 +127,30 @@ An Array is a special kind of object used to store an ordered collection of valu
 let numbers = [1, 2, 3, 4, 5];
 let mixedArray = [1, "two", { name: "Object" }, [3, 4, 5]]; */
 
+
+// Practice Question
+
+const product = {
+    title : "Ball Pen",
+    rating : 4,
+    offer : 5,
+    price : 270
+};
+
+console.log(product);
+
+const profile = {
+    userName : "Nabraj_Madai",
+    post : 432,
+    isFollow : false,
+    followers : 345,
+    following : 543,
+    bio : "Web developer"
+};
+
+console.log(profile);
+console.log(typeof profile["isFollow"]);
+console.log(typeof profile["userName"]);
+console.log(typeof profile["bio"]);
+console.log(typeof profile["post"]);
+console.log(typeof profile["following"])
