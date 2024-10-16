@@ -1,3 +1,6 @@
+// In this session I learn  about console, Variables, datatypes , comments in js..etc
+
+
 // console.log is used to log (print) a message to the console
 console.log("Hello! Coders");
 console.log("Nabraj Madai");
